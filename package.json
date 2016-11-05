@@ -11,9 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/deepstreamIO/deepstream.io-msg-connector-template.git"
+    "url": "https://github.com/UltraNemesis/deepstream.io-msg-nats.git"
   },
-  "author": "deepstreamHub GmbH",
+  "author": "UltraNemesis",
   "license": "Apache-2.0",
   "dependencies": {
     "nats": "^0.6.8"
@@ -29,7 +29,7 @@
     "sinon-chai": "^2.8.0"
   },
   "bugs": {
-    "url": "https://github.com/deepstreamIO/deepstream.io-msg-connector-template/issues"
+    "url": "https://github.com/UltraNemesis/deepstream.io-msg-nats/issues"
   },
   "homepage": ""
 }
