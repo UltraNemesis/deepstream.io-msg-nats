@@ -48,7 +48,7 @@ var MessageConnector = function( config ) {
   })
 
   this._client.on('disconnect', function () {
-      this.emit('error', 'NATS error: disconnected')
+      connector.emit('error', 'NATS error: disconnected')
   })
 
   this.subscriptions = {}
