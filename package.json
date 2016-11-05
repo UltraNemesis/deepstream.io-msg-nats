@@ -1,0 +1,35 @@
+{
+  "name": "deepstream.io-msg-nats",
+  "version": "0.0.1",
+  "description": "[deepstream](http://deepstream.io) message connector for [nats](http://nats.io/)",
+  "main": "src/message-connector.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha",
+    "lint": "eslint \"src/**/*.js\" \"test/**/*.js\"",
+    "ci": "npm run coverage && npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deepstreamIO/deepstream.io-msg-connector-template.git"
+  },
+  "author": "deepstreamHub GmbH",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "nats": "^0.6.8"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "eslint": "^2.11.1",
+    "eslint-config-airbnb": "^3.1.0",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.5.2",
+    "sinon": "^1.17.4",
+    "sinon-chai": "^2.8.0"
+  },
+  "bugs": {
+    "url": "https://github.com/deepstreamIO/deepstream.io-msg-connector-template/issues"
+  },
+  "homepage": ""
+}
