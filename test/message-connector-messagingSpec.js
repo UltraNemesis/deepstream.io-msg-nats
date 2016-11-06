@@ -6,7 +6,7 @@ const sinonChai = require("sinon-chai")
 require('chai').use(sinonChai)
 const EventEmitter = require( 'events' ).EventEmitter
 const settings = {
-    servers: ['nats://localhost:4222', 'nats://localhost:5222']
+    servers: ['nats://localhost:4222']
 }
 const MESSAGE_TIME = 500
 

@@ -37,8 +37,6 @@ var MessageConnector = function( config ) {
   
   this._senderId = config.serverName || (Math.random() * 10000000000000000000).toString(36)
    
-  console.log('[Sender - ' + this._senderId + '] Connecting to nats cluster : ' + config.servers)
-
   this._client = nats.connect({ 'servers': config.servers })
   var connector = this;
     
@@ -72,10 +70,11 @@ util.inherits( MessageConnector, events.EventEmitter )
  * @returns {void}
  */
 MessageConnector.prototype.unsubscribe = function (topic, callback) {
+    this.removeListener(topic, callback)
+
     if (topic in this.subscriptions) {
         this._client.unsubscribe(this.subscriptions[topic])
     }
-    
 }
 
 /**
