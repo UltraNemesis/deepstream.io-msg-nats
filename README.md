@@ -8,7 +8,7 @@ This connector uses [the npm NATS client package](https://www.npmjs.com/package/
 ## Example configuration 
 ```yaml
 plugins:
-  cache:
+  message:
     name: nats
     options:
       servers: 
